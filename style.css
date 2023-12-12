@@ -3,115 +3,105 @@
   padding: 0;
   box-sizing: border-box;
 }
-html,
-body {
-  width: 100%;
-  max-width: 100vw;
-  height: 100%;
-}
 body {
   font-family: "Inter", sans-serif;
   font-family: "Montserrat", sans-serif;
   background-image: linear-gradient(to right, #fff 40%, #aeaeae);
+  font-weight: 400;
 }
-.logo-ferrara {
-  max-width: 100%;
-  padding: 60px;
-  padding-left: 178px;
+.nav {
+  display: block;
+  width: 90%;
+  max-width: 1070px;
+  margin: auto;
 }
-.ferrara {
-  width: 150px;
-  text-align: center;
+.nav .logo-ferrara {
+  width: 200px;
+  padding: 40px 0 70px;
 }
-.conteudo {
-  display: grid;
-  grid-template-columns: auto auto;
-  align-items: center;
-  justify-content: center;
-  gap: 180px;
-  border: 4px solid blue;
+.patterns2 {
+  top: 400px;
+  display: block;
+  position: absolute;
+  left: 0;
 }
-.foto1 {
-  max-width: 100%;
-  display: flex;
-  width: 500px;
-  align-items: center;
+.nav .patterns3 {
+  display: block;
+  position: absolute;
+  left: 40%;
 }
-.introducao {
+.nav .detalhe3 {
   width: 300px;
 }
-.introducao span {
-  font-weight: 600;
+.conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1070px;
+  margin: auto;
+  gap: 180px;
 }
-.conteudo h2 {
-  font-size: 20px;
+.introducao {
+  align-items: center;
+  font-size: 25px;
+}
+.introducao h1 {
+  width: 380px;
+  font-weight: 400;
+}
+.introducao h2 {
   color: #f79502;
 }
-.rodape {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 70px;
-  padding: 50px;
+.fotos {
+  width: 100%;
+  padding-bottom: 375px;
 }
-.logos-rodape {
-  border: 4px solid blue;
+.fotos img {
+  opacity: 0;
+  position: absolute;
+  transition: opacity 700ms;
+  width: 550px;
+  max-height: 100vw;
 }
-.logos-rodape h3 {
-  margin-left: 30px;
+.fotos img.foto1 {
+  opacity: 1;
 }
-
-.logos-rodape img {
+.patterns1 .detalhe1 {
+  display: block;
+  position: absolute;
+  right: 0;
   width: 150px;
-  height: 30px;
 }
-.apostila {
-  height: 100px;
+.patterns2 .detalhe2 {
+  width: 150px;
 }
-
-.logos-rodape h3 {
-  font-size: 13px;
-  font-weight: bold;
+.rodape {
+  width: 90%;
+  max-width: 1070px;
+  height: 200px;
+  display: flex;
+  padding: 70px 0 0;
+  justify-content: center;
+  margin: auto;
+}
+.rodape .logos-rodape {
+  width: 550px;
+}
+.logos-rodape .fotos-logo img {
+  width: 150px;
+  height: 60px;
+  padding: 10px;
 }
 .localizacao {
+  width: 550px;
   display: flex;
-  width: 507px;
-  align-items: center;
-  border: 4px solid blue;
   text-align: end;
-  gap: 30px;
-  font-size: 13px;
 }
-@media screen and (max-width: 700px) {
-  body {
-    margin: 20px;
-    width: 100%;
-  }
-  .conteudo {
-    display: block;
-    width: 100%;
-    flex-direction: column;
-  }
-  .introducao {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .foto1 {
-    max-width: 100%;
-    display: block;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .rodape {
-    width: 100%;
-    flex-direction: column;
-    margin-top: 50px;
-  }
-  .localizacao {
-    margin-top: 50px;
-  }
-  .logos-rodape img {
-    width: 120px;
-  }
+.localizacao .sp-curitiba a {
+  color: black;
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  
 }
